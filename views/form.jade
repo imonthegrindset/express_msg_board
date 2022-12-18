@@ -2,7 +2,8 @@ extends layout
 
 block content
     form(method='POST', action='/new')
-        label Username
-        input(type='text', name='name')
-        label Message Content 
-        input(type='text', name='name')
+        label(name='usr') Username
+        input(type='text', name='usr')
+        label(name='msg') Message Content 
+        input(type='text', name='msg')
+        button(type='submit') Submit Message
